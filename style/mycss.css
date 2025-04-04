@@ -1,0 +1,167 @@
+/*Стили шрифтов из Google */
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&family=Rubik+Wet+Paint&display=swap);
+
+/* */
+
+
+
+/*Бегунок справа*/
+
+body::-webkit-scrollbar {
+    width: 15px;
+    /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+    /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #5161ce;
+    /* Цвет бегунка */
+    border-radius: 20px;
+    /* Округление бегунка */
+    border: 0 solid #050c26;
+    /* Оформление границ бегунка */
+}
+
+.log {
+    display: block;
+    height: 120px;;
+}
+
+/*Стили для всех заголовков сайта */
+.main {
+    text-align: center;
+}
+
+/* linear-gradient(270deg, #3e29a9 24%, #fb0909 100%); */
+
+/*Расположение фотографий*/
+
+
+/* Для десктопов */
+@media (min-width: 768px) {
+    .image-wrapper {
+        float: right;
+        margin-left: 30px;
+        max-width: 50%;
+    }
+}
+
+/* Для мобильных */
+@media (max-width: 767px) {
+    .image-wrapper {
+        margin: 20px auto;
+        max-width: 80%;
+    }
+}
+
+/* Уменьшение текста при свертывании */
+.connect p {
+    font-size: 3vw;
+    /* 3% of viewport width */
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(1.75rem, 4vw, 3rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+}
+
+h4 {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+}
+
+h5 {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+h6 {
+    font-size: clamp(0.5rem, 1.25vw, 1rem);
+}
+
+
+
+/* уменьшение картинки при уменьшени экрана */
+.vw-img {
+    width: 40vw;
+    /* 40% ширины экрана */
+    height: auto;
+    max-width: 800px;
+    /* ограничение максимального размера */
+}
+
+
+
+
+
+
+
+
+
+/* Телефон и Почта нижние */
+
+
+/* Стили для контактов в футере */
+.footer-contacts {
+    background-color: white;
+    /*цвет фона */
+    padding: 15px 20px;
+    /*внутренний отступ */
+    position: fixed;
+    /*"Клей" */
+    bottom: 0;
+    /* */
+    left: 0;
+    /* */
+    right: 0;
+    /* */
+    z-index: 1000;
+    /* */
+}
+
+.tel {
+    font-family: "Rubik Wet Paint", system-ui;   /*Шрифт */
+    font-weight: 400;            /*Размер шрифта */
+    font-style: normal;            /*Стиль шрифта */
+  
+    
+}
+
+.mail .btn {
+    font-size: 18px;
+    /*Размер шрифта*/
+    padding: 8px 20px;
+    position: center;
+}
+
+
+
+@media (max-width: 768px) {
+
+    /*под мобильные устройства */
+    .footer-contacts .row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .tel {
+        font-size: 20px;
+    }
+
+    .mail .btn {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/*Конец кода для Телефона и Почты */
