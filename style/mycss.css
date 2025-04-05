@@ -101,7 +101,17 @@ h6 {
 }
 
 
-
+.calcbutton {
+    font-family: Georgia, 'Times New Roman', Times, serif;   /*Шрифт */
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    height: 50px;
+    width: 300px;
+    color: black;
+    text-decoration: solid;
+    background-color: rgb(172, 153, 224);
+}
 
 
 
